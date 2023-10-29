@@ -1,0 +1,326 @@
+* {
+  font-family: "Assistant", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 8.25rem;
+  margin-bottom: 0.9375rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+.navbar-brand {
+  font-family: "Satisfy", cursive;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1.25rem;
+}
+
+li {
+  color: black;
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 750px;
+}
+
+.container-fluid img {
+  border-radius: 50%;
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  z-index: 1;
+}
+
+.navbar img {
+  margin-right: 15px;
+}
+
+
+.port {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 16.25rem;
+  position: relative;
+}
+
+
+.bg {
+  height: 22rem;
+}
+
+.bg,
+.foot {
+  position: relative;
+  background-color: #b4f3f8;
+}
+
+.bg::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background-image: url(/img/points.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+
+.icons {
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  align-items: center;
+ gap: 20px;
+}
+
+.navIcons {
+  border-top: 2px solid rgba(226, 226, 226, 0.602);
+  border-bottom: 2px solid rgba(226, 226, 226, 0.602);
+  gap: 0.9375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.proj-btns {
+  display: flex;
+  gap: 20px;
+}
+
+
+.btn {
+  background-color: #1AE0EC;
+  border-radius: 30px;
+  padding: .3125rem .9375rem;
+  
+  margin-top: 0.9375rem;
+  transition: all 0.6s;
+  font-weight: 600;
+}
+
+
+
+
+button:hover {
+  background-color: #1addef;
+}
+
+.cv img {
+  rotate: -17deg;
+}
+
+.grid1 img {
+  border-top-right-radius: 0.625rem;
+  border-top-left-radius: 0.625rem;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 1.25rem;
+
+  
+}
+
+
+.btn2 button {
+  border-radius: 0;
+  margin-top: 0;
+  border: none;
+  font-weight: 600;
+}
+
+
+.foot2 {
+  background-color: #2e2e2e;
+}
+
+.foot2 p {
+  color: white;
+  text-align: center;
+  font-size: 0.9375rem;
+  padding-bottom: 10px;
+}
+
+.foot2Child img {
+  width: 25px;
+}
+
+.foot2Child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 10px;
+}
+
+.icon2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 9.375rem;
+  color: white;
+  font-size: 12px;
+
+}
+
+.icon2 img {
+  margin-bottom: 10px;
+ 
+}
+
+.icon2 p {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 700px) {
+
+  .port > p:first-of-type {
+    text-align: center;
+  }
+
+
+
+  .icons {
+    display: flex;
+  
+  }
+
+  .icons img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .foot2Child {
+    display: grid;
+    grid-template-rows: repeat(2, 100px);
+    grid-template-columns: repeat(3, 100px);
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    
+    color: white;
+  }
+
+  .btn {
+    padding: .125rem .3125rem;
+    font-size: .875rem;
+  }
+   
+
+  .icon2 {
+    font-size: 0.7rem;
+    text-align: center;
+    width: 5.25rem;
+    height: 5.25rem;
+    color: white;
+    
+  }
+
+
+  .icon2 img {
+    width: 30%;
+    height: 30%;
+  }
+
+  .foot2 p {
+    font-size: 0.7rem;
+  }
+}
+
+.landing-section {
+  background-color: rgb(229, 229, 229);
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+/* 
+.landing-section img {
+  width: 60%;
+} */
+
+
+.landing-pic {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  filter: drop-shadow(0px 8px 9px rgba(0, 0, 0, 0.48));
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+
+.landing-pic {
+  width: 100%;
+  height: 200px;
+}
+
+.landing-section {
+  background-color: rgb(229, 229, 229);
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+}
